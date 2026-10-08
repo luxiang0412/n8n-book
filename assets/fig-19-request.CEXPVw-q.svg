@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 360" width="940" height="360" role="img" aria-label="EngineRequest 前后执行栈：Agent 返回请求后，两个工具压到栈顶，Agent 带着恢复元数据压在它们下面；工具依次执行；Agent 再次被弹出并拿到两条结果。" font-family="-apple-system, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', 'Noto Sans SC', sans-serif">
+<title>EngineRequest 前后执行栈：Agent 返回请求后，两个工具压到栈顶，Agent 带着恢复元数据压在它们下面；工具依次执行；Agent 再次被弹出并拿到两条结果。</title>
+<defs><marker id="a-neutral" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#64748b"/></marker><marker id="a-neutral-s" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#64748b"/></marker><marker id="a-accent" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#2563eb"/></marker><marker id="a-accent-s" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#2563eb"/></marker><marker id="a-ok" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#16a34a"/></marker><marker id="a-ok-s" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#16a34a"/></marker><marker id="a-warn" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#d97706"/></marker><marker id="a-warn-s" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#d97706"/></marker><marker id="a-bad" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker><marker id="a-bad-s" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker><marker id="a-purple" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#7c3aed"/></marker><marker id="a-purple-s" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#7c3aed"/></marker><marker id="a-teal" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0d9488"/></marker><marker id="a-teal-s" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0d9488"/></marker><marker id="a-muted" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#cbd5e1"/></marker><marker id="a-muted-s" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#cbd5e1"/></marker></defs>
+<rect x="0.5" y="0.5" width="939" height="359" rx="14" fill="#ffffff" stroke="#e5e7eb"/>
+<text x="24.0" y="34.0" font-size="15" text-anchor="start" fill="#1f2937" font-weight="700">EngineRequest：工具压栈，Agent 压回去</text>
+<text x="24.0" y="54.0" font-size="12" text-anchor="start" fill="#6b7280">Calculator 和 Shout 被同一轮请求</text>
+<text x="20.0" y="88.0" font-size="12" text-anchor="start" fill="#1f2937" font-weight="700">① 弹出 Agent</text>
+<rect x="20.0" y="98.0" width="200.0" height="170.0" rx="8" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5"/>
+<text x="28.0" y="116.0" font-size="10" text-anchor="start" fill="#6b7280">执行栈（头在上）</text>
+<text x="120.0" y="190.0" font-size="11" text-anchor="middle" fill="#6b7280">（空）</text>
+<text x="20.0" y="290.0" font-size="11" text-anchor="start" fill="#6b7280">Agent.execute() 返回</text>
+<text x="20.0" y="304.9" font-size="11" text-anchor="start" fill="#6b7280">EngineRequest（2 个 action）</text>
+<text x="250.0" y="88.0" font-size="12" text-anchor="start" fill="#1f2937" font-weight="700">② handleEngineRequest</text>
+<rect x="250.0" y="98.0" width="200.0" height="170.0" rx="8" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5"/>
+<text x="258.0" y="116.0" font-size="10" text-anchor="start" fill="#6b7280">执行栈（头在上）</text>
+<rect x="264.0" y="124.0" width="172.0" height="28.0" rx="8" fill="#f0fdfa" stroke="#0d9488" stroke-width="1.5"/>
+<text x="350.0" y="141.3" font-size="11" text-anchor="middle" fill="#134e4a" font-weight="600">Calculator</text>
+<rect x="264.0" y="158.0" width="172.0" height="28.0" rx="8" fill="#f0fdfa" stroke="#0d9488" stroke-width="1.5"/>
+<text x="350.0" y="175.3" font-size="11" text-anchor="middle" fill="#134e4a" font-weight="600">Shout</text>
+<rect x="264.0" y="192.0" width="172.0" height="28.0" rx="8" fill="#fffbeb" stroke="#d97706" stroke-width="1.5"/>
+<text x="350.0" y="209.3" font-size="11" text-anchor="middle" fill="#78350f" font-weight="600">AI Agent（resume）</text>
+<text x="250.0" y="290.0" font-size="11" text-anchor="start" fill="#6b7280">工具预留运行记录</text>
+<text x="250.0" y="304.9" font-size="11" text-anchor="start" fill="#6b7280">inputOverride = 模型给的参数</text>
+<text x="480.0" y="88.0" font-size="12" text-anchor="start" fill="#1f2937" font-weight="700">③ 工具执行完</text>
+<rect x="480.0" y="98.0" width="200.0" height="170.0" rx="8" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5"/>
+<text x="488.0" y="116.0" font-size="10" text-anchor="start" fill="#6b7280">执行栈（头在上）</text>
+<rect x="494.0" y="124.0" width="172.0" height="28.0" rx="8" fill="#fffbeb" stroke="#d97706" stroke-width="1.5"/>
+<text x="580.0" y="141.3" font-size="11" text-anchor="middle" fill="#78350f" font-weight="600">AI Agent（resume）</text>
+<text x="480.0" y="290.0" font-size="11" text-anchor="start" fill="#6b7280">工具输出记为 ai_tool</text>
+<text x="480.0" y="304.9" font-size="11" text-anchor="start" fill="#6b7280">不会调度下游</text>
+<text x="710.0" y="88.0" font-size="12" text-anchor="start" fill="#1f2937" font-weight="700">④ 恢复 Agent</text>
+<rect x="710.0" y="98.0" width="200.0" height="170.0" rx="8" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5"/>
+<text x="718.0" y="116.0" font-size="10" text-anchor="start" fill="#6b7280">执行栈（头在上）</text>
+<text x="810.0" y="190.0" font-size="11" text-anchor="middle" fill="#6b7280">（空）</text>
+<text x="710.0" y="290.0" font-size="11" text-anchor="start" fill="#6b7280">collectSubNodeResults()</text>
+<text x="710.0" y="304.9" font-size="11" text-anchor="start" fill="#6b7280">→ EngineResponse（2 条结果）</text>
+</svg>

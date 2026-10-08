@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 380" width="980" height="380" role="img" aria-label="两条认证路径：编辑器请求带 httpOnly cookie，JWT 验签、检查用户的密码哈希片段；公开 API 带 X-N8N-API-KEY，按哈希查找 key 并检查 scope。两条路径都得到一个用户，再按全局角色和共享表判断能否访问某个工作流或凭证。" font-family="-apple-system, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', 'Noto Sans SC', sans-serif">
+<title>两条认证路径：编辑器请求带 httpOnly cookie，JWT 验签、检查用户的密码哈希片段；公开 API 带 X-N8N-API-KEY，按哈希查找 key 并检查 scope。两条路径都得到一个用户，再按全局角色和共享表判断能否访问某个工作流或凭证。</title>
+<defs><marker id="a-neutral" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#64748b"/></marker><marker id="a-neutral-s" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#64748b"/></marker><marker id="a-accent" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#2563eb"/></marker><marker id="a-accent-s" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#2563eb"/></marker><marker id="a-ok" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#16a34a"/></marker><marker id="a-ok-s" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#16a34a"/></marker><marker id="a-warn" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#d97706"/></marker><marker id="a-warn-s" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#d97706"/></marker><marker id="a-bad" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker><marker id="a-bad-s" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker><marker id="a-purple" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#7c3aed"/></marker><marker id="a-purple-s" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#7c3aed"/></marker><marker id="a-teal" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0d9488"/></marker><marker id="a-teal-s" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0d9488"/></marker><marker id="a-muted" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#cbd5e1"/></marker><marker id="a-muted-s" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#cbd5e1"/></marker></defs>
+<rect x="0.5" y="0.5" width="979" height="379" rx="14" fill="#ffffff" stroke="#e5e7eb"/>
+<text x="24.0" y="34.0" font-size="15" text-anchor="start" fill="#1f2937" font-weight="700">谁在请求？能碰什么？</text>
+<text x="24.0" y="54.0" font-size="12" text-anchor="start" fill="#6b7280">认证得到用户；授权查角色和共享表</text>
+<rect x="20.0" y="90.0" width="180.0" height="60.0" rx="8" fill="#eff6ff" stroke="#2563eb" stroke-width="1.5"/>
+<text x="110.0" y="117.1" font-size="12" text-anchor="middle" fill="#1e3a8a" font-weight="600">编辑器 /rest/*</text>
+<text x="110.0" y="132.7" font-size="10" text-anchor="middle" fill="#6b7280">Cookie: mini-n8n-auth</text>
+<rect x="20.0" y="230.0" width="180.0" height="60.0" rx="8" fill="#f5f3ff" stroke="#7c3aed" stroke-width="1.5"/>
+<text x="110.0" y="257.1" font-size="12" text-anchor="middle" fill="#4c1d95" font-weight="600">脚本 /api/v1/*</text>
+<text x="110.0" y="272.7" font-size="10" text-anchor="middle" fill="#6b7280">X-N8N-API-KEY</text>
+<rect x="260.0" y="80.0" width="230.0" height="80.0" rx="8" fill="#f8fafc" stroke="#94a3b8" stroke-width="1.5"/>
+<text x="375.0" y="111.6" font-size="11" text-anchor="middle" fill="#1f2937" font-weight="600">JWT 验签 + 未过期</text>
+<text x="375.0" y="125.9" font-size="9" text-anchor="middle" fill="#6b7280">payload.hash == sha256(email:密码哈希)</text>
+<text x="375.0" y="137.6" font-size="9" text-anchor="middle" fill="#6b7280">改密码 → 旧会话失效</text>
+<rect x="260.0" y="220.0" width="230.0" height="80.0" rx="8" fill="#f8fafc" stroke="#94a3b8" stroke-width="1.5"/>
+<text x="375.0" y="251.6" font-size="11" text-anchor="middle" fill="#1f2937" font-weight="600">sha256(key) 查表</text>
+<text x="375.0" y="265.9" font-size="9" text-anchor="middle" fill="#6b7280">key 的 scopes</text>
+<text x="375.0" y="277.6" font-size="9" text-anchor="middle" fill="#6b7280">如 workflow:read</text>
+<rect x="560.0" y="150.0" width="150.0" height="60.0" rx="8" fill="#f0fdf4" stroke="#16a34a" stroke-width="1.5"/>
+<text x="635.0" y="171.6" font-size="11" text-anchor="middle" fill="#14532d" font-weight="600">用户</text>
+<text x="635.0" y="185.9" font-size="9" text-anchor="middle" fill="#6b7280">global:owner</text>
+<text x="635.0" y="197.6" font-size="9" text-anchor="middle" fill="#6b7280">global:member</text>
+<rect x="770.0" y="70.0" width="190.0" height="70.0" rx="8" fill="#f0fdfa" stroke="#0d9488" stroke-width="1.5"/>
+<text x="865.0" y="92.4" font-size="10" text-anchor="middle" fill="#134e4a" font-weight="600">工作流</text>
+<text x="865.0" y="105.4" font-size="8" text-anchor="middle" fill="#6b7280">owner 全可见</text>
+<text x="865.0" y="115.8" font-size="8" text-anchor="middle" fill="#6b7280">shared_workflow:</text>
+<text x="865.0" y="126.2" font-size="8" text-anchor="middle" fill="#6b7280">workflow:owner / editor</text>
+<rect x="770.0" y="160.0" width="190.0" height="60.0" rx="8" fill="#f0fdfa" stroke="#0d9488" stroke-width="1.5"/>
+<text x="865.0" y="182.6" font-size="10" text-anchor="middle" fill="#134e4a" font-weight="600">凭证</text>
+<text x="865.0" y="195.6" font-size="8" text-anchor="middle" fill="#6b7280">shared_credentials:</text>
+<text x="865.0" y="206.0" font-size="8" text-anchor="middle" fill="#6b7280">credential:owner / user</text>
+<rect x="770.0" y="240.0" width="190.0" height="60.0" rx="8" fill="#fffbeb" stroke="#d97706" stroke-width="1.5"/>
+<text x="865.0" y="267.4" font-size="11" text-anchor="middle" fill="#78350f" font-weight="600">保存工作流时</text>
+<text x="865.0" y="281.8" font-size="9" text-anchor="middle" fill="#6b7280">用到的凭证必须可用</text>
+<path d="M200.0,120.0 L260.0,120.0" fill="none" stroke="#64748b" stroke-width="1.6" marker-end="url(#a-neutral)"/>
+<path d="M200.0,260.0 L260.0,260.0" fill="none" stroke="#64748b" stroke-width="1.6" marker-end="url(#a-neutral)"/>
+<path d="M490.0,120.0 L560.0,170.0" fill="none" stroke="#64748b" stroke-width="1.6" marker-end="url(#a-neutral)"/>
+<path d="M490.0,260.0 L560.0,190.0" fill="none" stroke="#64748b" stroke-width="1.6" marker-end="url(#a-neutral)"/>
+<path d="M710.0,170.0 L770.0,105.0" fill="none" stroke="#64748b" stroke-width="1.6" marker-end="url(#a-neutral)"/>
+<path d="M710.0,180.0 L770.0,190.0" fill="none" stroke="#64748b" stroke-width="1.6" marker-end="url(#a-neutral)"/>
+<path d="M710.0,195.0 L770.0,265.0" fill="none" stroke="#64748b" stroke-width="1.6" marker-end="url(#a-neutral)"/>
+<text x="490.0" y="340.0" font-size="12" text-anchor="middle" fill="#1f2937" font-weight="600">API key 的权限 = key 的 scopes ∩ 它所属用户能访问的资源</text>
+<text x="490.0" y="364.0" font-size="11" text-anchor="middle" fill="#6b7280">看不到的工作流返回 404（不暴露它存在）；能看到但不能做的操作返回 403</text>
+</svg>

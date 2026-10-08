@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 560" width="940" height="560" role="img" aria-label="一次手动执行：前端 POST /run，控制器只执行数据库中的版本，Runner 登记执行并构建钩子，引擎循环执行节点，钩子把进度推送回前端并在结束时写库。" font-family="-apple-system, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', 'Noto Sans SC', sans-serif">
+<title>一次手动执行：前端 POST /run，控制器只执行数据库中的版本，Runner 登记执行并构建钩子，引擎循环执行节点，钩子把进度推送回前端并在结束时写库。</title>
+<defs><marker id="a-neutral" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#64748b"/></marker><marker id="a-neutral-s" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#64748b"/></marker><marker id="a-accent" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#2563eb"/></marker><marker id="a-accent-s" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#2563eb"/></marker><marker id="a-ok" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#16a34a"/></marker><marker id="a-ok-s" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#16a34a"/></marker><marker id="a-warn" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#d97706"/></marker><marker id="a-warn-s" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#d97706"/></marker><marker id="a-bad" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker><marker id="a-bad-s" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker><marker id="a-purple" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#7c3aed"/></marker><marker id="a-purple-s" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#7c3aed"/></marker><marker id="a-teal" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0d9488"/></marker><marker id="a-teal-s" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0d9488"/></marker><marker id="a-muted" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#cbd5e1"/></marker><marker id="a-muted-s" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#cbd5e1"/></marker></defs>
+<rect x="0.5" y="0.5" width="939" height="559" rx="14" fill="#ffffff" stroke="#e5e7eb"/>
+<text x="24.0" y="34.0" font-size="15" text-anchor="start" fill="#1f2937" font-weight="700">一次手动执行的完整链路</text>
+<text x="24.0" y="54.0" font-size="12" text-anchor="start" fill="#6b7280">实线：调用；虚线：推送/回调</text>
+<rect x="30.0" y="72.0" width="190.0" height="34.0" rx="8" fill="#f5f3ff" stroke="#7c3aed" stroke-width="1.5"/>
+<text x="125.0" y="92.6" font-size="12" text-anchor="middle" fill="#4c1d95" font-weight="600">编辑器 (Vue)</text>
+<line x1="125" y1="106" x2="125" y2="540" stroke="#e5e7eb" stroke-width="1" stroke-dasharray="4 4"/>
+<rect x="250.0" y="72.0" width="190.0" height="34.0" rx="8" fill="#eff6ff" stroke="#2563eb" stroke-width="1.5"/>
+<text x="345.0" y="92.6" font-size="12" text-anchor="middle" fill="#1e3a8a" font-weight="600">cli: HTTP 层</text>
+<line x1="345" y1="106" x2="345" y2="540" stroke="#e5e7eb" stroke-width="1" stroke-dasharray="4 4"/>
+<rect x="480.0" y="72.0" width="190.0" height="34.0" rx="8" fill="#eff6ff" stroke="#2563eb" stroke-width="1.5"/>
+<text x="575.0" y="92.6" font-size="12" text-anchor="middle" fill="#1e3a8a" font-weight="600">cli: 执行层</text>
+<line x1="575" y1="106" x2="575" y2="540" stroke="#e5e7eb" stroke-width="1" stroke-dasharray="4 4"/>
+<rect x="720.0" y="72.0" width="190.0" height="34.0" rx="8" fill="#f0fdfa" stroke="#0d9488" stroke-width="1.5"/>
+<text x="815.0" y="92.6" font-size="12" text-anchor="middle" fill="#134e4a" font-weight="600">core: 引擎</text>
+<line x1="815" y1="106" x2="815" y2="540" stroke="#e5e7eb" stroke-width="1" stroke-dasharray="4 4"/>
+<rect x="30.0" y="124.0" width="190.0" height="44.0" rx="8" fill="#f8fafc" stroke="#94a3b8" stroke-width="1.5"/>
+<text x="125.0" y="143.4" font-size="11" text-anchor="middle" fill="#1f2937" font-weight="600">runEntireWorkflow()</text>
+<text x="125.0" y="157.8" font-size="9" text-anchor="middle" fill="#6b7280">useRunWorkflow.ts</text>
+<circle cx="28" cy="128" r="10" fill="#1f2937" stroke="#1f2937" stroke-width="1.5"/>
+<text x="28.0" y="131.5" font-size="10" text-anchor="middle" fill="#ffffff" font-weight="600">1</text>
+<rect x="250.0" y="124.0" width="190.0" height="44.0" rx="8" fill="#f8fafc" stroke="#94a3b8" stroke-width="1.5"/>
+<text x="345.0" y="143.4" font-size="11" text-anchor="middle" fill="#1f2937" font-weight="600">runManually()</text>
+<text x="345.0" y="157.8" font-size="9" text-anchor="middle" fill="#6b7280">POST /workflows/:id/run</text>
+<circle cx="248" cy="128" r="10" fill="#1f2937" stroke="#1f2937" stroke-width="1.5"/>
+<text x="248.0" y="131.5" font-size="10" text-anchor="middle" fill="#ffffff" font-weight="600">2</text>
+<rect x="480.0" y="124.0" width="190.0" height="44.0" rx="8" fill="#f8fafc" stroke="#94a3b8" stroke-width="1.5"/>
+<text x="575.0" y="143.4" font-size="11" text-anchor="middle" fill="#1f2937" font-weight="600">executeManually()</text>
+<text x="575.0" y="157.8" font-size="9" text-anchor="middle" fill="#6b7280">部分 / 触发器 / 自动</text>
+<circle cx="478" cy="128" r="10" fill="#1f2937" stroke="#1f2937" stroke-width="1.5"/>
+<text x="478.0" y="131.5" font-size="10" text-anchor="middle" fill="#ffffff" font-weight="600">3</text>
+<rect x="480.0" y="194.0" width="190.0" height="44.0" rx="8" fill="#f8fafc" stroke="#94a3b8" stroke-width="1.5"/>
+<text x="575.0" y="213.4" font-size="11" text-anchor="middle" fill="#1f2937" font-weight="600">WorkflowRunner.run()</text>
+<text x="575.0" y="227.8" font-size="9" text-anchor="middle" fill="#6b7280">activeExecutions.add → DB</text>
+<circle cx="478" cy="198" r="10" fill="#1f2937" stroke="#1f2937" stroke-width="1.5"/>
+<text x="478.0" y="201.5" font-size="10" text-anchor="middle" fill="#ffffff" font-weight="600">4</text>
+<rect x="480.0" y="264.0" width="190.0" height="44.0" rx="8" fill="#f8fafc" stroke="#94a3b8" stroke-width="1.5"/>
+<text x="575.0" y="283.4" font-size="11" text-anchor="middle" fill="#1f2937" font-weight="600">runMainProcess()</text>
+<text x="575.0" y="297.8" font-size="9" text-anchor="middle" fill="#6b7280">Workflow + 钩子 + 超时</text>
+<circle cx="478" cy="268" r="10" fill="#1f2937" stroke="#1f2937" stroke-width="1.5"/>
+<text x="478.0" y="271.5" font-size="10" text-anchor="middle" fill="#ffffff" font-weight="600">5</text>
+<rect x="720.0" y="264.0" width="190.0" height="44.0" rx="8" fill="#f8fafc" stroke="#94a3b8" stroke-width="1.5"/>
+<text x="815.0" y="283.4" font-size="11" text-anchor="middle" fill="#1f2937" font-weight="600">WorkflowExecute.run()</text>
+<text x="815.0" y="297.8" font-size="9" text-anchor="middle" fill="#6b7280">栈中放入起始节点</text>
+<circle cx="718" cy="268" r="10" fill="#1f2937" stroke="#1f2937" stroke-width="1.5"/>
+<text x="718.0" y="271.5" font-size="10" text-anchor="middle" fill="#ffffff" font-weight="600">6</text>
+<rect x="720.0" y="334.0" width="190.0" height="44.0" rx="8" fill="#f8fafc" stroke="#94a3b8" stroke-width="1.5"/>
+<text x="815.0" y="353.4" font-size="11" text-anchor="middle" fill="#1f2937" font-weight="600">主循环：弹栈→runNode</text>
+<text x="815.0" y="367.8" font-size="9" text-anchor="middle" fill="#6b7280">→ 子节点压栈</text>
+<circle cx="718" cy="338" r="10" fill="#1f2937" stroke="#1f2937" stroke-width="1.5"/>
+<text x="718.0" y="341.5" font-size="10" text-anchor="middle" fill="#ffffff" font-weight="600">7</text>
+<rect x="480.0" y="404.0" width="190.0" height="44.0" rx="8" fill="#f8fafc" stroke="#94a3b8" stroke-width="1.5"/>
+<text x="575.0" y="423.4" font-size="11" text-anchor="middle" fill="#1f2937" font-weight="600">hookFunctionsPush</text>
+<text x="575.0" y="437.8" font-size="9" text-anchor="middle" fill="#6b7280">nodeExecuteAfter(+Data)</text>
+<circle cx="478" cy="408" r="10" fill="#1f2937" stroke="#1f2937" stroke-width="1.5"/>
+<text x="478.0" y="411.5" font-size="10" text-anchor="middle" fill="#ffffff" font-weight="600">8</text>
+<rect x="30.0" y="404.0" width="190.0" height="44.0" rx="8" fill="#f8fafc" stroke="#94a3b8" stroke-width="1.5"/>
+<text x="125.0" y="423.4" font-size="11" text-anchor="middle" fill="#1f2937" font-weight="600">handlers/nodeExecuteAfter</text>
+<text x="125.0" y="437.8" font-size="9" text-anchor="middle" fill="#6b7280">画布变绿 · 显示 item 数</text>
+<circle cx="28" cy="408" r="10" fill="#1f2937" stroke="#1f2937" stroke-width="1.5"/>
+<text x="28.0" y="411.5" font-size="10" text-anchor="middle" fill="#ffffff" font-weight="600">9</text>
+<rect x="480.0" y="474.0" width="190.0" height="44.0" rx="8" fill="#f8fafc" stroke="#94a3b8" stroke-width="1.5"/>
+<text x="575.0" y="493.4" font-size="11" text-anchor="middle" fill="#1f2937" font-weight="600">hookFunctionsSave</text>
+<text x="575.0" y="507.8" font-size="9" text-anchor="middle" fill="#6b7280">结束时写入执行记录</text>
+<path d="M220.0,146.0 L250.0,146.0" fill="none" stroke="#64748b" stroke-width="1.6" marker-end="url(#a-neutral)"/>
+<path d="M440.0,146.0 L480.0,146.0" fill="none" stroke="#64748b" stroke-width="1.6" marker-end="url(#a-neutral)"/>
+<text x="400.0" y="118.0" font-size="10" text-anchor="middle" fill="#6b7280">只执行 DB 中的版本</text>
+<path d="M575.0,168.0 L575.0,194.0" fill="none" stroke="#64748b" stroke-width="1.6" marker-end="url(#a-neutral)"/>
+<path d="M575.0,238.0 L575.0,264.0" fill="none" stroke="#64748b" stroke-width="1.6" marker-end="url(#a-neutral)"/>
+<path d="M670.0,286.0 L720.0,286.0" fill="none" stroke="#64748b" stroke-width="1.6" marker-end="url(#a-neutral)"/>
+<path d="M815.0,308.0 L815.0,334.0" fill="none" stroke="#64748b" stroke-width="1.6" marker-end="url(#a-neutral)"/>
+<path d="M815.0,378.0 L815.0,426.0 L670.0,426.0" fill="none" stroke="#0d9488" stroke-width="1.6" stroke-dasharray="5 4" marker-end="url(#a-teal)"/>
+<rect x="790.1" y="410.0" width="30.0" height="15" rx="3" fill="#ffffff" opacity="0.92"/>
+<text x="805.1" y="421.5" font-size="11" text-anchor="middle" fill="#0d9488">钩子</text>
+<path d="M480.0,426.0 L220.0,426.0" fill="none" stroke="#7c3aed" stroke-width="1.6" stroke-dasharray="5 4" marker-end="url(#a-purple)"/>
+<rect x="301.3" y="410.0" width="97.3" height="15" rx="3" fill="#ffffff" opacity="0.92"/>
+<text x="350.0" y="421.5" font-size="11" text-anchor="middle" fill="#7c3aed">WebSocket push</text>
+<path d="M815.0,378.0 L815.0,496.0 L670.0,496.0" fill="none" stroke="#0d9488" stroke-width="1.6" stroke-dasharray="5 4" marker-end="url(#a-teal)"/>
+<rect x="668.0" y="480.0" width="135.6" height="15" rx="3" fill="#ffffff" opacity="0.92"/>
+<text x="735.8" y="491.5" font-size="11" text-anchor="middle" fill="#0d9488">workflowExecuteAfter</text>
+<path d="M345.0,168.0 L345.0,210.0 L220.0,210.0 L125.0,210.0 L125.0,404.0" fill="none" stroke="#cbd5e1" stroke-width="1.6" stroke-dasharray="5 4" marker-end="url(#a-muted)"/>
+<rect x="129.9" y="194.0" width="103.7" height="15" rx="3" fill="#ffffff" opacity="0.92"/>
+<text x="181.8" y="205.5" font-size="11" text-anchor="middle" fill="#6b7280">{ executionId }</text>
+</svg>

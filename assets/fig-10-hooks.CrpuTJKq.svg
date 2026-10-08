@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 360" width="920" height="360" role="img" aria-label="引擎只调用钩子；不同场景挂不同的处理函数组：regular main 保存并推送，worker 保存并经 Redis 转发，CLI 打印。" font-family="-apple-system, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', 'Noto Sans SC', sans-serif">
+<title>引擎只调用钩子；不同场景挂不同的处理函数组：regular main 保存并推送，worker 保存并经 Redis 转发，CLI 打印。</title>
+<defs><marker id="a-neutral" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#64748b"/></marker><marker id="a-neutral-s" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#64748b"/></marker><marker id="a-accent" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#2563eb"/></marker><marker id="a-accent-s" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#2563eb"/></marker><marker id="a-ok" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#16a34a"/></marker><marker id="a-ok-s" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#16a34a"/></marker><marker id="a-warn" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#d97706"/></marker><marker id="a-warn-s" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#d97706"/></marker><marker id="a-bad" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker><marker id="a-bad-s" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker><marker id="a-purple" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#7c3aed"/></marker><marker id="a-purple-s" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#7c3aed"/></marker><marker id="a-teal" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0d9488"/></marker><marker id="a-teal-s" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0d9488"/></marker><marker id="a-muted" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#cbd5e1"/></marker><marker id="a-muted-s" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#cbd5e1"/></marker></defs>
+<rect x="0.5" y="0.5" width="919" height="359" rx="14" fill="#ffffff" stroke="#e5e7eb"/>
+<text x="24.0" y="34.0" font-size="15" text-anchor="start" fill="#1f2937" font-weight="700">钩子把引擎与外部世界解耦</text>
+<text x="24.0" y="54.0" font-size="12" text-anchor="start" fill="#6b7280">WorkflowExecute 只认识 ExecutionLifecycleHooks</text>
+<rect x="40.0" y="140.0" width="200.0" height="80.0" rx="8" fill="#f0fdfa" stroke="#0d9488" stroke-width="1.5"/>
+<text x="140.0" y="164.1" font-size="12" text-anchor="middle" fill="#134e4a" font-weight="600">WorkflowExecute</text>
+<text x="140.0" y="179.7" font-size="10" text-anchor="middle" fill="#6b7280">workflowExecuteBefore/After</text>
+<text x="140.0" y="192.7" font-size="10" text-anchor="middle" fill="#6b7280">nodeExecuteBefore/After</text>
+<text x="140.0" y="205.7" font-size="10" text-anchor="middle" fill="#6b7280">sendResponse · sendChunk</text>
+<rect x="320.0" y="150.0" width="160.0" height="60.0" rx="8" fill="#eff6ff" stroke="#2563eb" stroke-width="1.5"/>
+<text x="400.0" y="177.4" font-size="11" text-anchor="middle" fill="#1e3a8a" font-weight="600">ExecutionLifecycleHooks</text>
+<text x="400.0" y="191.8" font-size="9" text-anchor="middle" fill="#6b7280">handlers[] · 串行 await</text>
+<path d="M240.0,180.0 L320.0,180.0" fill="none" stroke="#64748b" stroke-width="1.6" marker-end="url(#a-neutral)"/>
+<rect x="253.7" y="164.0" width="52.7" height="15" rx="3" fill="#ffffff" opacity="0.92"/>
+<text x="280.0" y="175.5" font-size="11" text-anchor="middle" fill="#64748b">runHook</text>
+<rect x="560.0" y="80.0" width="200.0" height="56.0" rx="8" fill="#f0fdf4" stroke="#16a34a" stroke-width="1.5"/>
+<text x="660.0" y="105.1" font-size="12" text-anchor="middle" fill="#14532d" font-weight="600">regular main</text>
+<text x="660.0" y="120.7" font-size="10" text-anchor="middle" fill="#6b7280">Save + Push + Statistics</text>
+<path d="M480.0,180.0 L560.0,108.0" fill="none" stroke="#cbd5e1" stroke-width="1.6" marker-end="url(#a-muted)"/>
+<rect x="560.0" y="160.0" width="200.0" height="56.0" rx="8" fill="#fffbeb" stroke="#d97706" stroke-width="1.5"/>
+<text x="660.0" y="185.1" font-size="12" text-anchor="middle" fill="#78350f" font-weight="600">scaling worker</text>
+<text x="660.0" y="200.7" font-size="10" text-anchor="middle" fill="#6b7280">Save + Push(→Redis 转发)</text>
+<path d="M480.0,180.0 L560.0,188.0" fill="none" stroke="#cbd5e1" stroke-width="1.6" marker-end="url(#a-muted)"/>
+<rect x="560.0" y="240.0" width="200.0" height="56.0" rx="8" fill="#f8fafc" stroke="#94a3b8" stroke-width="1.5"/>
+<text x="660.0" y="265.1" font-size="12" text-anchor="middle" fill="#1f2937" font-weight="600">CLI / 测试</text>
+<text x="660.0" y="280.7" font-size="10" text-anchor="middle" fill="#6b7280">打印 / 断言</text>
+<path d="M480.0,180.0 L560.0,268.0" fill="none" stroke="#cbd5e1" stroke-width="1.6" marker-end="url(#a-muted)"/>
+<rect x="800.0" y="80.0" width="100.0" height="56.0" rx="8" fill="#f8fafc" stroke="#94a3b8" stroke-width="1.5"/>
+<text x="850.0" y="105.1" font-size="12" text-anchor="middle" fill="#1f2937" font-weight="600">DB</text>
+<text x="850.0" y="120.7" font-size="10" text-anchor="middle" fill="#6b7280">execution_*</text>
+<rect x="800.0" y="160.0" width="100.0" height="56.0" rx="8" fill="#f5f3ff" stroke="#7c3aed" stroke-width="1.5"/>
+<text x="850.0" y="185.1" font-size="12" text-anchor="middle" fill="#4c1d95" font-weight="600">浏览器</text>
+<text x="850.0" y="200.7" font-size="10" text-anchor="middle" fill="#6b7280">按 pushRef</text>
+<path d="M760.0,100.0 L800.0,106.0" fill="none" stroke="#64748b" stroke-width="1.6" marker-end="url(#a-neutral)"/>
+<path d="M760.0,118.0 L800.0,180.0" fill="none" stroke="#7c3aed" stroke-width="1.6" stroke-dasharray="5 4" marker-end="url(#a-purple)"/>
+<path d="M760.0,188.0 L800.0,196.0" fill="none" stroke="#7c3aed" stroke-width="1.6" stroke-dasharray="5 4" marker-end="url(#a-purple)"/>
+<text x="460.0" y="330.0" font-size="12" text-anchor="middle" fill="#1f2937" font-weight="600">新增一个关注点 = 再挂一组处理函数，引擎代码不变</text>
+</svg>
