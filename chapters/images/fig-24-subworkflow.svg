@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 400" width="980" height="400" role="img" aria-label="子工作流等待：父执行的 Execute Workflow 启动子执行；子执行进入等待后，父执行也以 WAIT_FOR_SUB_EXECUTION 停下并记下子执行 ID；WaitTracker 到期恢复子执行，子执行结束时把输出写进父执行栈顶条目的输入，再恢复父执行，节点以禁用状态把它传下去。" font-family="-apple-system, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', 'Noto Sans SC', sans-serif">
+<title>子工作流等待：父执行的 Execute Workflow 启动子执行；子执行进入等待后，父执行也以 WAIT_FOR_SUB_EXECUTION 停下并记下子执行 ID；WaitTracker 到期恢复子执行，子执行结束时把输出写进父执行栈顶条目的输入，再恢复父执行，节点以禁用状态把它传下去。</title>
+<defs><marker id="a-neutral" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#64748b"/></marker><marker id="a-neutral-s" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#64748b"/></marker><marker id="a-accent" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#2563eb"/></marker><marker id="a-accent-s" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#2563eb"/></marker><marker id="a-ok" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#16a34a"/></marker><marker id="a-ok-s" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#16a34a"/></marker><marker id="a-warn" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#d97706"/></marker><marker id="a-warn-s" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#d97706"/></marker><marker id="a-bad" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker><marker id="a-bad-s" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker><marker id="a-purple" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#7c3aed"/></marker><marker id="a-purple-s" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#7c3aed"/></marker><marker id="a-teal" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0d9488"/></marker><marker id="a-teal-s" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0d9488"/></marker><marker id="a-muted" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#cbd5e1"/></marker><marker id="a-muted-s" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#cbd5e1"/></marker></defs>
+<rect x="0.5" y="0.5" width="979" height="399" rx="14" fill="#ffffff" stroke="#e5e7eb"/>
+<text x="24.0" y="34.0" font-size="15" text-anchor="start" fill="#1f2937" font-weight="700">父执行等子执行：两段执行，一次补丁</text>
+<text x="24.0" y="54.0" font-size="12" text-anchor="start" fill="#6b7280">两段执行之间的状态都在数据库里</text>
+<text x="20.0" y="114.0" font-size="12" text-anchor="start" fill="#1f2937" font-weight="600">父执行</text>
+<line x1="120" y1="110" x2="960" y2="110" stroke="#e5e7eb" stroke-width="1" stroke-dasharray="4 4"/>
+<text x="20.0" y="204.0" font-size="12" text-anchor="start" fill="#1f2937" font-weight="600">子执行</text>
+<line x1="120" y1="200" x2="960" y2="200" stroke="#e5e7eb" stroke-width="1" stroke-dasharray="4 4"/>
+<text x="20.0" y="294.0" font-size="12" text-anchor="start" fill="#1f2937" font-weight="600">WaitTracker</text>
+<line x1="120" y1="290" x2="960" y2="290" stroke="#e5e7eb" stroke-width="1" stroke-dasharray="4 4"/>
+<text x="20.0" y="364.0" font-size="12" text-anchor="start" fill="#1f2937" font-weight="600">数据库</text>
+<line x1="120" y1="360" x2="960" y2="360" stroke="#e5e7eb" stroke-width="1" stroke-dasharray="4 4"/>
+<rect x="130.0" y="94.0" width="150.0" height="32.0" rx="8" fill="#eff6ff" stroke="#2563eb" stroke-width="1.5"/>
+<text x="205.0" y="113.3" font-size="11" text-anchor="middle" fill="#1e3a8a" font-weight="600">Execute Workflow</text>
+<path d="M205.0,126.0 L205.0,184.0" fill="none" stroke="#2563eb" stroke-width="1.6" marker-end="url(#a-accent)"/>
+<rect x="212.0" y="139.0" width="30.0" height="15" rx="3" fill="#ffffff" opacity="0.92"/>
+<text x="227.0" y="150.5" font-size="11" text-anchor="middle" fill="#2563eb">启动</text>
+<rect x="150.0" y="184.0" width="150.0" height="32.0" rx="8" fill="#fffbeb" stroke="#d97706" stroke-width="1.5"/>
+<text x="225.0" y="203.3" font-size="11" text-anchor="middle" fill="#78350f" font-weight="600">Wait 3600 s → 等待</text>
+<path d="M300.0,200.0 L330.0,126.0" fill="none" stroke="#d97706" stroke-width="1.6" marker-end="url(#a-warn)"/>
+<rect x="279.5" y="147.0" width="59.0" height="15" rx="3" fill="#ffffff" opacity="0.92"/>
+<text x="309.0" y="158.5" font-size="11" text-anchor="middle" fill="#d97706">waitTill</text>
+<rect x="320.0" y="94.0" width="230.0" height="32.0" rx="8" fill="#fffbeb" stroke="#d97706" stroke-width="1.5"/>
+<text x="435.0" y="113.3" font-size="11" text-anchor="middle" fill="#78350f" font-weight="600">也等待：WAIT_FOR_SUB_EXECUTION</text>
+<rect x="320.0" y="344.0" width="230.0" height="32.0" rx="8" fill="#f9fafb" stroke="#d1d5db" stroke-width="1.5"/>
+<text x="435.0" y="363.3" font-size="11" text-anchor="middle" fill="#9ca3af" font-weight="600" font-family="'JetBrains Mono', Menlo, Consolas, 'Noto Sans Mono CJK SC', monospace">metadata.waitingChildExecutionIds</text>
+<path d="M435.0,126.0 L435.0,344.0" fill="none" stroke="#cbd5e1" stroke-width="1.6" stroke-dasharray="5 4" marker-end="url(#a-muted)"/>
+<rect x="580.0" y="274.0" width="150.0" height="32.0" rx="8" fill="#f5f3ff" stroke="#7c3aed" stroke-width="1.5"/>
+<text x="655.0" y="293.3" font-size="11" text-anchor="middle" fill="#4c1d95" font-weight="600">到期：认领并恢复</text>
+<path d="M655.0,274.0 L655.0,216.0" fill="none" stroke="#7c3aed" stroke-width="1.6" marker-end="url(#a-purple)"/>
+<rect x="590.0" y="184.0" width="140.0" height="32.0" rx="8" fill="#f0fdf4" stroke="#16a34a" stroke-width="1.5"/>
+<text x="660.0" y="203.3" font-size="11" text-anchor="middle" fill="#14532d" font-weight="600">跑完：Done</text>
+<path d="M730.0,200.0 L760.0,360.0" fill="none" stroke="#0d9488" stroke-width="1.6" marker-end="url(#a-teal)"/>
+<rect x="751.9" y="280.0" width="126.1" height="15" rx="3" fill="#ffffff" opacity="0.92"/>
+<text x="815.0" y="291.5" font-size="11" text-anchor="middle" fill="#0d9488">补丁：输出 → 父的输入</text>
+<rect x="750.0" y="344.0" width="200.0" height="32.0" rx="8" fill="#f9fafb" stroke="#d1d5db" stroke-width="1.5"/>
+<text x="850.0" y="363.3" font-size="11" text-anchor="middle" fill="#9ca3af" font-weight="600">栈顶 data.main = 子输出</text>
+<path d="M850.0,344.0 L850.0,126.0" fill="none" stroke="#0d9488" stroke-width="1.6" marker-end="url(#a-teal)"/>
+<rect x="864.5" y="219.0" width="63.0" height="15" rx="3" fill="#ffffff" opacity="0.92"/>
+<text x="896.0" y="230.5" font-size="11" text-anchor="middle" fill="#0d9488">恢复父执行</text>
+<rect x="770.0" y="94.0" width="180.0" height="32.0" rx="8" fill="#f0fdf4" stroke="#16a34a" stroke-width="1.5"/>
+<text x="860.0" y="113.3" font-size="11" text-anchor="middle" fill="#14532d" font-weight="600">节点禁用 → 传出子输出</text>
+<text x="490.0" y="392.0" font-size="11" text-anchor="middle" fill="#6b7280">子执行失败时写入 metadata.resumeError：父执行的这个节点直接报错</text>
+</svg>

@@ -1,0 +1,11 @@
+[
+  { "text": "Part 0 导读", "items": ["00-how-to-read"] },
+  { "text": "Part I 全景（浅）", "items": ["01-forms", "02-architecture", "03-one-execution"] },
+  { "text": "Part II 工作流引擎 → v0.1", "items": ["04-data-model", "05-node-types", "06-expressions", "07-execution-engine", "08-robustness", "lab-1-engine"] },
+  { "text": "Part III 服务端 → v0.2", "items": ["09-persistence", "10-hooks-and-push", "11-credentials", "12-triggers", "lab-2-server"] },
+  { "text": "Part IV 编辑器 → v0.3", "items": ["13-canvas", "14-ndv", "15-run-and-debug", "lab-3-editor"] },
+  { "text": "Part V AI Agent → v0.4", "items": ["16-cluster-nodes", "17-chat-models", "18-tools-agent", "19-engine-request", "20-tools", "21-memory-chat-streaming", "lab-4-agent"] },
+  { "text": "Part VI 高级 AI → v0.5", "items": ["22-rag", "23-multi-agent-hitl", "lab-5-rag-hitl"] },
+  { "text": "Part VII 平台化（深）→ v1.0", "items": ["24-subworkflows-waiting", "25-queue-mode", "26-task-runner", "27-users-permissions-api", "28-deployment-observability", "lab-6-deploy"] },
+  { "text": "附录", "items": ["appendix/a-source-map", "appendix/b-glossary", "appendix/c-comparison", "appendix/d-answers"] }
+]
